@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Landing</title>
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="second.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Socho.ai</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#" class="tt">Courses</a></li>
+            <li><a href="#" class="tt">Pricing</a></li>
+            <li><a href="#" class="tt">Leaderboard</a></li>
+            <li><a href="#" class="tt">Be a techer</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./" class="tt">login</a></li>
+            <li><a class="green">Signup</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    <div id="particles-js"></div>
+    <div class="banner">
+      <h1 class="hero">High Quality Online Courses</h1>
+      <p class="second-heading">Interactive tech courses in our intelligent virtual classrooms</p>
+      <div class="buttons">
+        <a href="#" class="green">Start Learning</a>
+        <a href="#" class="white">See courses</a>
+      </div>
+      <div class="vidcontainer">
+        <img onclick="show()" class="video"  src="placeholder.jpg" width="500" height="300">
+        <img src="play.png" onclick="show()" class="play video" alt="" height="50" width="50">
+      </div>
+    </div>
+    <div class="botmenu">
+      <h3 class="main-heading">What do you want to learn?</h3>
+      <div class="buttont">
+        <a href="#" class="trans">Coding</a>
+        <a href="#" class="trans">Design</a>
+        <a href="#" class="trans">Film Making</a>
+        <a href="#" class="trans">Music Production</a>
+        <a href="#" class="trans">Hardware</a>
+      </div>
+    </div>
+    <div class="overlay" onclick="hide()" id="vid">
+      <iframe id="video" width="420" height="315" src="//www.youtube.com/embed/9B7te184ZpQ?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script type="text/javascript">
+      var vid = document.getElementById('vid');
+      function show() {
+        vid.style.visibility='visible';
+      }
+      function hide() {
+        vid.style.visibility='hidden';
+      }
+
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+
+    </script>
+    <script src="particles.js"></script>
+  <script src="main.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
