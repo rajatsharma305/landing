@@ -117,9 +117,6 @@ a:hover{
   .buttons{
     flex-direction: column !important;
   }
-  .buttont{
-    flex-direction: column !important;
-  }
   .video{
     width: 300px;
     height: 200px;
@@ -182,6 +179,9 @@ a:hover{
   cursor: pointer;
 }
  @media (max-width: 916px) {
+   .buttont{
+     flex-direction: column !important;
+   }
    .trans{
      padding: 15px 0px;
      width: 300px;
