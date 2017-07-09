@@ -13,8 +13,9 @@ body {
 }
 
 .main-heading {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: 2px;
+  font-weight: bolder;
 }
 
 .second-heading {

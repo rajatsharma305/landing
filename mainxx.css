@@ -8,7 +8,7 @@
 }
 
 .white {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 2px;
   background-color: white !important;
   color: #4765e6 !important;
@@ -35,7 +35,7 @@ a {
 
 .nav li a {
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 22px;
 }
 
@@ -105,15 +105,15 @@ a:hover {
 }
 
 .trans {
-  padding: 10px 0px;
-  border: 1px solid #35cefb;
+  padding: 10px 10px;
+  border: 1px solid white;
   border-radius: 30px;
   margin: 20px;
   color: white;
-  width: 150px;
+  width: 160px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .botmenu {
@@ -170,7 +170,7 @@ a:hover {
 }
 
 .green {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 2px;
   background-color: #4dcd92 !important;
   color: white !important;
@@ -180,7 +180,6 @@ a:hover {
 }
 
 .trans:hover {
-  border: 1px solid darkblue;
   color: white;
 }
 
@@ -257,4 +256,13 @@ a:hover {
     padding: 0px !important;
     padding-left: 15px!important;
   }
+}
+
+#video{
+  animation: slide 0.5s ease;
+}
+
+@keyframes slide {
+    from {transform: translateY(-80px);}
+    to {transform: translateY(0px);}
 }
