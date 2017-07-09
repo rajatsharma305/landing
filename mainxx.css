@@ -131,7 +131,7 @@ a:hover {
     flex-direction: column !important;
   }
   .video {
-    width: 400px !important;
+    width: 385px !important;
     height: 250px !important;
   }
 }
@@ -273,7 +273,25 @@ a:hover {
   }
 }
 
-#video{
+/*#video{
+  animation: slide 0.7s ease;
+}
+
+@keyframes slide {
+    from {transform: translateY(-60px);}
+    to {transform: translateY(0px);}
+}*/
+
+.end{
+  animation: gg 0.5s ease;
+}
+
+@keyframes gg {
+    from {transform: translateY(0px);}
+    to {transform: translateY(-80px);}
+}
+
+.start{
   animation: slide 0.5s ease;
 }
 

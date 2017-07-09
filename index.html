@@ -73,7 +73,7 @@
     </div>
   </div>
   <div class="overlay" onclick="hide()" id="vid">
-    <iframe id="video" width="500" height="300" src="//www.youtube.com/embed/zmhpxzqoMfg?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe id="video" class="start" width="500" height="300" src="//www.youtube.com/embed/zmhpxzqoMfg?rel=0" frameborder="0" allowfullscreen></iframe>
   </div>
   <script type="text/javascript">
     var vid = document.getElementById('vid');
@@ -81,11 +81,15 @@
 
     function show() {
       vid.style.display = 'flex';
+      video.className = 'start';
     }
 
     function hide() {
-      vid.style.display = 'none';
-      video.src = '//www.youtube.com/embed/zmhpxzqoMfg?rel=0';
+      video.className='end';
+      setTimeout(function(){
+        vid.style.display = 'none';
+        video.src = '//www.youtube.com/embed/zmhpxzqoMfg?rel=0';
+      },400)
     }
 
     $(function() {
