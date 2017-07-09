@@ -140,10 +140,15 @@ a:hover {
   .buttont {
     flex-direction: column !important;
   }
+
   .trans {
     padding: 15px 0px;
-    width: 300px;
+    width: 200px;
     text-align: center;
+  }
+
+  .main-heading{
+    font-size: 18px;
   }
 }
 
