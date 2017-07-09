@@ -77,13 +77,15 @@
   </div>
   <script type="text/javascript">
     var vid = document.getElementById('vid');
+    var video = document.getElementById('video');
 
     function show() {
-      vid.style.visibility = 'visible';
+      vid.style.display = 'flex';
     }
 
     function hide() {
-      vid.style.visibility = 'hidden';
+      vid.style.display = 'none';
+      video.src = '//www.youtube.com/embed/zmhpxzqoMfg?rel=0';
     }
 
     $(function() {
