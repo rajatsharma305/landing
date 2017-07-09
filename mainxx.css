@@ -135,7 +135,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 990px) {
   .buttont {
     flex-direction: column !important;
   }
@@ -190,6 +190,11 @@ a:hover {
   border-radius: 30px;
   padding: 8px 20px !important;
   margin-top: 5px;
+}
+
+.green:hover{
+  background-color: #46BB85 !important;
+  cursor: pointer;
 }
 
 .trans:hover {
