@@ -23,6 +23,15 @@ body {
   font-size: 24px;
 }
 
+.blue-overlay{
+  background-color: rgba(83,137,248,0.3);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .hero {
   letter-spacing: 1px;
   font-size: 40px !important;

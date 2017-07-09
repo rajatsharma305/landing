@@ -79,6 +79,7 @@ a:hover{
   top: 43%;
   left: 43%;
   border-radius: 50%;
+  z-index: 100;
 }
 
 .buttons a{
@@ -120,8 +121,8 @@ a:hover{
     flex-direction: column !important;
   }
   .video{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
   }
 }
 
