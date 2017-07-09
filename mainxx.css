@@ -1,56 +1,67 @@
-*{
+* {
   color: #fff !important;
 }
 
-.navbar{
+.navbar {
   height: 70px;
   padding: 10px 20px;
 }
 
-.white{
+.white {
   font-size: 11px;
   letter-spacing: 2px;
   background-color: white !important;
-  color : #4765e6 !important;
+  color: #4765e6 !important;
   border-radius: 30px;
 }
 
-.right a{
+.right a {
   padding: 6px 12px;
   color: white;
   text-decoration: none;
 }
-a{
+
+a {
   text-transform: uppercase !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   letter-spacing: 2px;
   font-size: 22px;
   margin-top: -5px;
   font-family: 'Dosis', sans-serif;
-  text-transform:lowercase !important;
+  text-transform: lowercase !important;
 }
 
-.nav li a{
+.nav li a {
   letter-spacing: 2px;
   font-size: 11px;
   margin-left: 22px;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-
-.vidcontainer{
+.vidcontainer {
   position: relative;
   margin-top: 20px;
 }
-.nav li:hover{
-  background-color:none !important;
+
+.nav li:hover {
+  background-color: none !important;
 }
-.banner{
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.banner {
   color: black;
   display: flex;
   flex-direction: column;
@@ -58,24 +69,24 @@ a:hover{
   margin-top: 20vh;
   text-align: center;
   justify-content: flex-end;
-  padding: 0px 50px;
 }
-.buttons{
+
+.buttons {
   display: flex;
   flex-direction: row;
 }
 
-.buttont{
+.buttont {
   display: flex;
   flex-direction: row;
   letter-spacing: 1px;
 }
 
 .icon-bar {
-   background-color:#fff !important;
+  background-color: #fff !important;
 }
 
-.play{
+.play {
   position: absolute;
   top: 43%;
   left: 43%;
@@ -83,7 +94,7 @@ a:hover{
   z-index: 100;
 }
 
-.buttons a{
+.buttons a {
   width: 200px;
   padding: 15px 15px !important;
   margin: 20px;
@@ -93,11 +104,11 @@ a:hover{
   border-radius: 30px;
 }
 
-.trans{
+.trans {
   padding: 10px 0px;
   border: 1px solid #35cefb;
   border-radius: 30px;
-  margin : 20px;
+  margin: 20px;
   color: white;
   width: 150px;
   text-align: center;
@@ -105,9 +116,9 @@ a:hover{
   font-size: 10px;
 }
 
-.botmenu{
+.botmenu {
   width: 100%;
-  background-color: #4765e6 ;
+  background-color: #4765e6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,25 +126,32 @@ a:hover{
 }
 
 @media only screen and (max-width: 800px) {
-  .buttons{
+  .buttons {
     flex-direction: column !important;
   }
-  .video{
+  .video {
     width: 400px !important;
     height: 250px !important;
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .video {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+
 .tt {
-  background-color:transparent !important;
+  background-color: transparent !important;
   text-transform: capitalize;
 }
 
-.tt:hover{
+.tt:hover {
   border-bottom: 2px solid #35cefb;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -147,22 +165,22 @@ a:hover{
   align-items: center;
 }
 
-.video{
+.video {
   width: 500px;
   height: 300px;
 }
 
-.green{
+.green {
   font-size: 11px;
   letter-spacing: 2px;
   background-color: #4dcd92 !important;
-  color : white !important;
+  color: white !important;
   border-radius: 30px;
   padding: 8px 20px !important;
   margin-top: 5px;
 }
 
-.trans:hover{
+.trans:hover {
   border: 1px solid darkblue;
   color: white;
 }
@@ -172,54 +190,72 @@ a:hover{
   transition: background-color 10ms linear;
 }
 
-.navbar-default .navbar-nav li a:hover,
- .navbar-default .navbar-nav > .active > a:hover,  {
-       background-color: initial;
- }
-.play{
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav>.active>a:hover, {
+  background-color: initial;
+}
+
+.play {
   cursor: pointer;
 }
- @media (max-width: 916px) {
-   .buttont{
-     flex-direction: column !important;
-   }
-   .trans{
-     padding: 15px 0px;
-     width: 300px;
-     text-align: center;
-   }
-      .navbar-header {
-          float: none;
-      }
-      .navbar-left,.navbar-right {
-          float: none !important;
-      }
-      .navbar-toggle {
-          display: block;
-      }
-      .navbar-collapse {
-          border-top: 1px solid transparent;
-          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-      }
-      .navbar-fixed-top {
-  		top: 0;
-  		border-width: 0 0 1px;
-  	}
-      .navbar-collapse.collapse {
-          display: none!important;
-      }
-      .navbar-nav {
-          float: none!important;
-  		margin-top: 7.5px;
-  	}
-  	.navbar-nav>li {
-          float: none;
-      }
-      .navbar-nav>li>a {
-          padding-top: 10px;
-          padding-bottom: 10px;
-      }
-      .collapse.in{
-    		display:block !important;
-  	}
+
+@media (max-width: 916px) {
+  .buttont {
+    flex-direction: column !important;
   }
+  .trans {
+    padding: 15px 0px;
+    width: 300px;
+    text-align: center;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 916px) {
+  .collapsing, .in {
+    background-color: #5389f8;
+  }
+  .collapsing ul li a:hover, .in ul li a:hover {
+    color: #35cefb!important;
+    border: none;
+  }
+  .collapsing ul li .green, .in ul li .green {
+    color: inherit;
+    !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    padding-left: 15px!important;
+  }
+}

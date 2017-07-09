@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400|Dosis:600|Quicksand:300');
 
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Quicksand', sans-serif;
   background: -webkit-linear-gradient(#5389f8, #35cefb);
   /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#5389f8, #35cefb);
@@ -13,7 +13,8 @@ body {
 }
 
 .main-heading {
-
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 2px;
 }
 
 .second-heading {
