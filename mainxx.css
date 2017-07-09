@@ -135,6 +135,19 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .buttont {
+    flex-direction: column !important;
+  }
+  .trans {
+    padding: 15px 0px;
+    width: 300px;
+    text-align: center;
+  }
+}
+
+
+
 @media only screen and (max-width: 400px) {
   .video {
     width: 100% !important;
@@ -197,14 +210,6 @@ a:hover {
 }
 
 @media (max-width: 916px) {
-  .buttont {
-    flex-direction: column !important;
-  }
-  .trans {
-    padding: 15px 0px;
-    width: 300px;
-    text-align: center;
-  }
   .navbar-header {
     float: none;
   }
